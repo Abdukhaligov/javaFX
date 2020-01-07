@@ -1,18 +1,22 @@
-<?import javafx.scene.control.Slider?>
 <?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.control.Spinner?>
-<?import javafx.scene.control.ColorPicker?>
-<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Accordion?>
 <GridPane fx:controller="sample.Controller" xmlns:fx="https://javafx.com/fxml" alignment="CENTER" hgap="10" vgap="10">
 
-    <Slider minWidth="500" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="10" min="0" max="100"
-        showTickLabels="true" showTickMarks="true" minorTickCount="2" snapToTicks="true"
-    />
+    <Accordion GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2" expandedPane="$tp3">
+        <panes>
+            <TitledPane text="Titled Pane">
+                <Label text="Label in titled pane" />
+            </TitledPane>
+            <TitledPane text="Titled Pane">
+                <Label text="Label in titled pane" />
+            </TitledPane>
+            <TitledPane fx:id="tp3" text="Titled Pane">
+                <Label text="Label in titled pane" />
+            </TitledPane>
+        </panes>
+    </Accordion>
 
-    <Spinner GridPane.rowIndex="1" GridPane.columnIndex="1" min="0" max="100"  editable="true" initialValue="50" />
-
-    <ColorPicker GridPane.rowIndex="2" GridPane.columnIndex="0" />
-
-    <DatePicker GridPane.rowIndex="3" GridPane.columnIndex="0" />
 
 </GridPane>
