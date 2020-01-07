@@ -1,9 +1,9 @@
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.image.Image?>
-<?import javafx.scene.control.Label?>
-<GridPane fx:controller="sample.Controller" xmlns:fx="https://javafx.com/fxml" alignment="CENTER">
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<GridPane fx:controller="sample.Controller" xmlns:fx="https://javafx.com/fxml" alignment="CENTER" hgap="10" vgap="10">
 
     <Button GridPane.rowIndex="0" GridPane.columnIndex="0" text="Click me">
         <graphic>
@@ -13,7 +13,10 @@
         </graphic>
     </Button>
 
-    <Label GridPane.rowIndex="0" GridPane.columnIndex="1" text="This is a label">
+    <Label GridPane.rowIndex="0" GridPane.columnIndex="1" text="This is a label more text more text more text" textFill="blue" wrapText="true">
+        <font>
+            <Font name="Arial bold" size="20" />
+        </font>
         <graphic>
             <ImageView>
                 <Image url="@/toolbarButtonGraphics/general/Information24.gif"/>
@@ -21,5 +24,12 @@
         </graphic>
     </Label>
 
+    <fx:define>
+        <ToggleGroup fx:id="radioColor"/>
+    </fx:define>
+
+    <RadioButton GridPane.rowIndex="2" GridPane.columnIndex="0" text="Red" toggleGroup="$radioColor" />
+    <RadioButton GridPane.rowIndex="2" GridPane.columnIndex="1" text="Blue" toggleGroup="$radioColor" />
+    <RadioButton GridPane.rowIndex="2" GridPane.columnIndex="2" text="Green" toggleGroup="$radioColor" />
 
 </GridPane>
