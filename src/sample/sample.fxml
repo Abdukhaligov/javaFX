@@ -1,18 +1,9 @@
-<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<StackPane fx:controller="sample.Controller" xmlns:fx="https://javafx.com/fxml">
 
-<?import javafx.scene.layout.TilePane?>
-<TilePane fx:controller="sample.Controller" xmlns:fx="https://javafx.com/fxml" orientation="HORIZONTAL">
+    <Button text="Button One"/>
+    <Label text="Some kind of text" />
 
-    <Button text="Button One" />
-    <Button text="Button Two" />
-    <Button text="Button Three" />
-    <Button text="Button Four" />
-    <Button text="Button Five" />
-    <Button text="Button Six" />
-    <Button text="Button Seven" />
-    <Button text="Button Eight" />
-    <Button text="Button Nine" />
-    <Button text="Button Ten" />
-
-</TilePane>
+</StackPane>
