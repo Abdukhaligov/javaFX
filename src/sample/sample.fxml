@@ -10,6 +10,18 @@
         <Label text="Some text on the top" BorderPane.alignment="CENTER" />
     </top>
 
+    <center>
+        <Label text="Some text in the center" />
+    </center>
+
+    <left>
+        <Label text="Some text in the left position" />
+    </left>
+
+    <right>
+        <Label text="Some text in the left position" />
+    </right>
+
     <bottom>
         <HBox spacing="10" alignment="TOP_RIGHT">
             <padding>
