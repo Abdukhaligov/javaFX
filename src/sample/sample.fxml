@@ -28,8 +28,23 @@
         <ToggleGroup fx:id="radioColor"/>
     </fx:define>
 
-    <RadioButton GridPane.rowIndex="2" GridPane.columnIndex="0" text="Red" toggleGroup="$radioColor" />
+    <RadioButton GridPane.rowIndex="2" GridPane.columnIndex="0" text="Red" toggleGroup="$radioColor" selected="true" />
     <RadioButton GridPane.rowIndex="2" GridPane.columnIndex="1" text="Blue" toggleGroup="$radioColor" />
     <RadioButton GridPane.rowIndex="2" GridPane.columnIndex="2" text="Green" toggleGroup="$radioColor" />
+
+    <CheckBox text="Subscribe to out news" GridPane.rowIndex="3" indeterminate="true"/>
+
+
+    <VBox GridPane.rowIndex="4" GridPane.columnIndex="0">
+        <CheckBox text="Dog" />
+        <CheckBox text="Car" />
+        <CheckBox text="Bird" />
+    </VBox>
+
+    <HBox GridPane.rowIndex="5" GridPane.columnIndex="0" >
+        <ToggleButton text="Toggle me" />
+        <ToggleButton text="Toggle me" />
+        <ToggleButton text="Toggle me" />
+    </HBox>
 
 </GridPane>
